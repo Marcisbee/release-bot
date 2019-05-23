@@ -1,1 +1,7 @@
-hello world!
+[
+  {
+    type: 'bugfix',
+    project: 'framework',
+    description: 'Some minor change'
+  }
+]
