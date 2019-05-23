@@ -5,7 +5,7 @@
     "description": "Some minor change"
   },
   {
-    "type": "bugfix",
+    "type": "feature",
     "project": "framework",
     "description": "Another change"
   },
