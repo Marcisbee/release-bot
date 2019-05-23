@@ -18,5 +18,10 @@
     "type": "feature",
     "project": "framework",
     "description": "Another coolness"
+  },
+  {
+    "type": "feature",
+    "project": "framework",
+    "description": "And jet another coolness"
   }
 ]
