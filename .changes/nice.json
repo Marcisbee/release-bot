@@ -10,7 +10,7 @@
     "description": "Another change"
   },
   {
-    "type": "bugfix",
+    "type": "feature",
     "project": "components",
     "description": "Cool huh ?"
   }
