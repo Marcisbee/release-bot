@@ -1,7 +1,7 @@
 [
   {
-    type: 'bugfix',
-    project: 'framework',
-    description: 'Some minor change'
+    "type": "bugfix",
+    "project": "framework",
+    "description": "Some minor change"
   }
 ]
