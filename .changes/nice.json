@@ -8,5 +8,10 @@
     "type": "bugfix",
     "project": "framework",
     "description": "Another change"
+  },
+  {
+    "type": "bugfix",
+    "project": "framework",
+    "description": "Cool huh ?"
   }
 ]
