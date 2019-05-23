@@ -11,7 +11,7 @@
   },
   {
     "type": "bugfix",
-    "project": "framework",
+    "project": "components",
     "description": "Cool huh ?"
   }
 ]
