@@ -1,27 +1,27 @@
 [
   {
     "type": "bugfix",
-    "project": "framework",
+    "category": "framework",
     "description": "Some minor change"
   },
   {
     "type": "feature",
-    "project": "framework",
+    "category": "framework",
     "description": "Another change"
   },
   {
     "type": "feature",
-    "project": "components",
+    "category": "components",
     "description": "Cool huh ?"
   },
   {
     "type": "feature",
-    "project": "framework",
+    "category": "framework",
     "description": "Another coolness"
   },
   {
     "type": "feature",
-    "project": "framework",
+    "category": "framework",
     "description": "And jet another coolness"
   }
 ]

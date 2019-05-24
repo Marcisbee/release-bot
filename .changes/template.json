@@ -1,7 +1,7 @@
 [
   {
     "type": "bugfix",
-    "project": "framework",
+    "category": "framework",
     "description": "Description about change"
   }
 ]
