@@ -1,6 +1,6 @@
 # Changelog
 
-## [v2.0.0](https://github.com/Marcisbee/release-bot/compare/v1.0.0...v2.0.0) (2019-05-24)
+## [v2.0.0](https://github.com/Marcisbee/release-bot/compare/v1.1.0...v2.0.0) (2019-05-24)
 ## Breaking Change
 - Framework
   - Adds actual code
