@@ -1,12 +1,12 @@
 // @ts-check
 /**
- * @type {import('..').Config}
+ * @type {Config}
  */
 // @ts-ignore
 const CONFIG = require('../config.json');
 
 /**
- * @param {import('..').Change[]} changes
+ * @param {Change[]} changes
  * @return {number}
  */
 function getHighestType(changes) {

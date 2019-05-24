@@ -1,6 +1,6 @@
 // @ts-check
 /**
- * @type {import('..').Config}
+ * @type {Config}
  */
 // @ts-ignore
 const CONFIG = require('../config.json');
@@ -14,7 +14,7 @@ function capitalise(value) {
 }
 
 /**
- * @param {import('..').Change[]} changes
+ * @param {Change[]} changes
  * @return {string}
  */
 function buildDescription(changes) {

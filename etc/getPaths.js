@@ -1,8 +1,8 @@
 // @ts-check
 /**
  * @typedef {Object<string, any>} Paths
- * @property {import('..').DeleteFile[]} files
- * @property {import('..').Change[]} changes
+ * @property {DeleteFile[]} files
+ * @property {Change[]} changes
  */
 
 /**
@@ -17,13 +17,13 @@ async function getPaths(context, pathname) {
   }));
 
   /**
-   * @type {import('..').DeleteFile[]}
+   * @type {DeleteFile[]}
    */
   const files = changesFileList.data
     .filter(({ path }) => !/\/template.json$/.test(path));
 
   /**
-   * @type {import('..').Change[]}
+   * @type {Change[]}
    */
   let changes = [];
 

@@ -6,7 +6,7 @@ const getHighestType = require('./getHighestType');
 const LAST_VERSION_LINE = /^## \[([v0-9.]+).*[\n\r]/mi;
 
 /**
- * @param {import('..').Change[]} changes
+ * @param {Change[]} changes
  * @param {string} repo
  * @param {string} log
  * @param {string} defaultVersion

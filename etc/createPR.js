@@ -1,7 +1,7 @@
 // @ts-check
 /**
  * @param {import('probot').Context} context
- * @param {import('..').Fields} fields
+ * @param {Fields} fields
  */
 async function createPR(context, fields) {
   const branch = fields.branch.substr(0, 10);

@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "paths": { "*": ["types/*"] },
+    "baseUrl": ".",
+    "target": "ES2017",
+    "lib": [
+      "es2017",
+      "dom"
+    ],
+    "checkJs": true,
+    "strictNullChecks": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true
+  },
+  "exclude": [
+    "test",
+    "node_modules",
+    "./node_modules",
+    "./node_modules/*",
+    "./node_modules/@types/node/index.d.ts",
+  ]
+}

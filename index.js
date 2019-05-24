@@ -23,10 +23,8 @@ module.exports = (app) => {
     const { changes, files } = await getPaths(context, '.changes/');
     const lastCommitId = context.payload.head_commit.id;
 
-    /**
-     * @type {string}
-     */
-    let changelogContents = null;
+    /** @type {string} */
+    let changelogContents = '';
     let changelogBlob;
     try {
       changelogBlob = await context.github.repos.getContents(context.repo({
@@ -39,10 +37,8 @@ module.exports = (app) => {
       console.warn(e);
     }
 
-    /**
-     * @type {{version: string}}
-     */
-    let packageJsonContents;
+    /** @type {{version: string}} */
+    let packageJsonContents = {};
     let packageBlob;
     try {
       packageBlob = await context.github.repos.getContents(context.repo({
@@ -76,19 +72,23 @@ module.exports = (app) => {
     // Also need to account for json file formatting
     const packageJson = `${JSON.stringify(packageJsonContents, null, '  ')}\n`;
 
+    const fieldFiles = [{
+      path: 'CHANGELOG.md',
+      content: changelog,
+      sha: (changelogBlob || { data: {} }).data.sha,
+    }];
+
+    if (packageJson) {
+      fieldFiles.push({
+        path: 'package.json',
+        content: packageJson,
+        sha: (packageBlob || { data: {} }).data.sha,
+      });
+    }
+
+    /** @type {Fields} */
     const output = {
-      files: [
-        packageJson && {
-          path: 'package.json',
-          content: packageJson,
-          sha: (packageBlob || { data: {} }).data.sha,
-        },
-        {
-          path: 'CHANGELOG.md',
-          content: changelog,
-          sha: (changelogBlob || { data: {} }).data.sha,
-        },
-      ].filter((file) => !!file),
+      files: fieldFiles,
       deleteFiles: files,
       pr: {
         title: `[Release] ${fromVersion && `v${fromVersion} - `}v${version}`,
@@ -106,43 +106,3 @@ module.exports = (app) => {
   // To get your app running against GitHub, see:
   // https://probot.github.io/docs/development/
 };
-
-/**
- * @typedef {Object<string, any>} Config
- * @property {{[key: string]: number}} types
- * @property {{[key: string]: string}} alias
- */
-
-/**
- * @typedef {Object<string, any>} Change
- * @property {string} type
- * @property {string} category
- * @property {string} description
- */
-
-/**
- * @typedef {Object<string, any>} DeleteFile
- * @property {string} path
- * @property {string} sha
- */
-
-/**
- * @typedef {Object<string, any>} PullRequest
- * @property {string} body
- * @property {string} title
- */
-
-/**
- * @typedef {Object<string, any>} File
- * @property {string} path
- * @property {string} content
- * @property {string} [sha]
- */
-
-/**
- * @typedef {Object<string, any>} Fields
- * @property {File[]} files
- * @property {DeleteFile[]} deleteFiles
- * @property {PullRequest} pr
- * @property {string} branch
- */
