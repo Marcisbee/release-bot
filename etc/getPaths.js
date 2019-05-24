@@ -1,4 +1,3 @@
-// @ts-check
 /**
  * @typedef {Object<string, any>} Paths
  * @property {DeleteFile[]} files

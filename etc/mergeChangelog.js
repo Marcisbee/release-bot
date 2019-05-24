@@ -1,4 +1,3 @@
-// @ts-check
 const buildDescription = require('./buildDescription');
 const bumpVersion = require('./bumpVersion');
 const getHighestType = require('./getHighestType');

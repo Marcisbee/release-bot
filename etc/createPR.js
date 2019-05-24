@@ -1,4 +1,3 @@
-// @ts-check
 /**
  * @param {import('probot').Context} context
  * @param {Fields} fields

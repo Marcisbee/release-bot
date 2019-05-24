@@ -1,4 +1,3 @@
-// @ts-check
 const createPR = require('./etc/createPR');
 const getPaths = require('./etc/getPaths');
 const hasChanges = require('./etc/hasChanges');
