@@ -1,6 +1,6 @@
 # Changelog
 
-## [v2.1.0](https://github.com/Marcisbee/release-bot/compare/v2.0.0...v2.1.0) (2019-05-24)
+## [v2.1.4](https://github.com/Marcisbee/release-bot/compare/v2.0.0...v2.1.4) (2019-05-24)
 ## Feature
 - Framework
   - Adds `ts-check`
