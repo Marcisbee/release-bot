@@ -1,5 +1,10 @@
 # Changelog
 
+## [v2.1.1](https://github.com/Marcisbee/release-bot/compare/v2.1.0...v2.1.1) (2019-05-27)
+## Bugfix
+- Framework
+  - Description about change 10
+
 ## [v2.1.0](https://github.com/Marcisbee/release-bot/compare/v2.0.0...v2.1.0) (2019-05-24)
 ## Feature
 - Framework
