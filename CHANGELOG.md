@@ -3,6 +3,11 @@
 Adds some custom text before releases block.
 This should here stay after changelog title.
 
+## [v2.1.4](https://github.com/Marcisbee/release-bot/compare/v2.1.3...v2.1.4) (2019-05-31)
+## Bugfix
+- `framework` - Description about change
+- `framework` - Description about change2
+
 ## [v2.1.3](https://github.com/Marcisbee/release-bot/compare/v2.1.2...v2.1.3) (2019-05-27)
 ## Bugfix
 - Framework
