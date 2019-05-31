@@ -1,0 +1,12 @@
+[
+  {
+    "type": "bugfix",
+    "category": "framework",
+    "description": "Description about change"
+  },
+  {
+    "type": "bugfix",
+    "category": "framework",
+    "description": "Description about change3"
+  }
+]
