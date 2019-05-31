@@ -1,8 +1,5 @@
 # Changelog
 
-Adds some custom text before releases block.
-This should here stay after changelog title.
-
 ## [v2.1.3](https://github.com/Marcisbee/release-bot/compare/v2.1.2...v2.1.3) (2019-05-27)
 ## Bugfix
 - Framework
