@@ -1,6 +1,6 @@
 {
   "name": "release-bot",
-  "version": "v2.1.0",
+  "version": "3.0.0",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon",
